@@ -6,18 +6,17 @@
 #     # do something
 #     print(n)
 
-# burgers = ['beef', 'chicken', 'veggies', 'supreme', 'double']
-# # for n in range (len(burgers)): #printing all inside burgers in range (5 in len)
-# #     print(n, burgers[n])
 
 # for n in range(len(burgers) -1,-1,-1):
 #     print(n, burgers[n])
 
+# items = [1,2,3,4,5]
+# for items in items:
+#     print(items)      
 
-
-# for n in range(3,100,50):
+# for n in range(5,10): #step number from 5 to 10
 #     print(n)
 
-burgers = ['beef', 'chicken','veg','supreme','double']
-for n in range(len(burgers)):
-        print(n, burgers[n])
+burgers = ['beef', 'chicken', 'veggies', 'supreme', 'double']
+for n in range (len(burgers)-1, -1, -1): #printing all inside burgers in range (5 in len)
+    print(n, burgers[n])
