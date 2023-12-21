@@ -20,50 +20,45 @@
 
 #pythagoean theorem fucntion
 def calc_pythagorean():
-    print("welcome to calculator pythagoras!")
-    pilihan_hitung = input("ingin menghitung sisi apa? [A, B, atau C] ")
+    print("Welcome to pythagoras calculator!")
+    pilihan_hitung = input("ingin menghitung sisi apa? \n[A] Sisi Tegak \n[B] Alas Segitiga \n[C] Sisi Miring/Hypotenuse \n[D] Luas Segitiga Siku-siku \n[E] Keliling Segitiga Siku-siku \n: ")
     
     if pilihan_hitung == "C": #hitung sisi miring
         side_a = int(input("Side A = "))
         side_b = int(input("Side B = "))
-        x  = (side_a ** 2) + (side_b ** 2)
-        square_root = x ** (0.5)
-        print("Jadi sisi C =", square_root)
-        # hitung_ulang1 = input("Ingin menghitung ulang?: [Y/N]")
-        # if hitung_ulang1 == "y":
-        #     calc_pythagorean()
-        # else:
-        #     print("thank you!")
+        sisi_miring  = ((side_a ** 2) + (side_b ** 2)) ** 0.5
+        print("Jadi sisi C =", sisi_miring)
 
     elif pilihan_hitung == "A": #hitung sisi tegak
         side_b = int(input("Side B = "))
         side_c = int(input("Side C = "))
-        x  = (side_b ** 2) - (side_c ** 2)
-        square_root = x ** (0.5)
-        print("Jadi sisi A =", square_root)
-        # hitung_ulang1 = input("Ingin menghitung ulang?: [Y/N]")
-        # if hitung_ulang1 == "y":
-        #     calc_pythagorean()
-        # else:
-        #     print("thank you!")
+        sisi_tegak  = ((side_b ** 2) - (side_c ** 2)) ** 0.5
+        print("Jadi sisi tegak segitiga =", sisi_tegak)
 
     elif pilihan_hitung == "B": #hitung side B (alas)
         side_a = int(input("Side A = "))
         side_c = int(input("Side C = "))
-        x  = (side_c ** 2) - (side_a ** 2)
-        square_root = x ** (0.5)
-        print("Jadi sisi B =", square_root)
-        # hitung_ulang1 = input("Ingin menghitung ulang?: [Y/N]")
-        # if hitung_ulang1 == "y":
-        #     calc_pythagorean()
-        # else:
-        #     print("thank you!")
+        alas_segitiga  = ((side_c ** 2) - (side_a ** 2)) ** 0.5
+        print("Jadi sisi B =", alas_segitiga)
+
+    elif pilihan_hitung == "D": #hitung luas segitiga siku-siku
+        side_b = int(input("Masukkan Alas = "))
+        side_a = int(input("Masukkan Tinggi = "))
+        luas_segitiga = 0.5 * (side_b * side_a)
+        print("Jadi luas segitiga = ", luas_segitiga)
+
+    elif pilihan_hitung == "E":
+        sisi_tegak      = int(input("Sisi Tegak = "))
+        alas_segitiga   = int(input("Alas Segitiga = "))
+        sisi_miring     = int(input("Sisi Miring = "))
+        keliling_segitiga = sisi_tegak + alas_segitiga + sisi_miring
+        print("Jadi keliling segitiga = ", keliling_segitiga)
 
     else:
-        print("Mohon inputkan A, B, atau C")
+        print("Mohon inputkan salah satu pilihan A hingga E")
 
 
-    hitung_ulang = input("Ingin menghitung ulang1?: [Y/N]")
+    hitung_ulang = input("Ingin menghitung ulang?: [Y/N]")
     if hitung_ulang == "y":
         calc_pythagorean()
     else:
