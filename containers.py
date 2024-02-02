@@ -16,4 +16,4 @@ warna_buah = dict(jeruk='orange',
 # print("key berisi %s" % a_dictionary[123]) #calling value from dictionary
 # print("warna buah jeruk adalah", warna_buah.get('jeruk')) #dengan method get
 
-print(user_list[0:6:2])
+print(user_list[::-2])
