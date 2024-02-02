@@ -8,12 +8,24 @@ user_list = ['lisa','bob','alex','anna','john','fred','miftah']
 #dictionary examples
 a_dictionary = {'key': 'addresses', 
                 123: [1,2,3]}
+a_dictionary['new key'] = 1.3
 
 warna_buah = dict(jeruk='orange', 
                   apel='merah', 
                   pisang='kuning') #dictionary with constructor
 
+new_list = [1,2,3,4,5,6,7,8,9,10]
+
 # print("key berisi %s" % a_dictionary[123]) #calling value from dictionary
 # print("warna buah jeruk adalah", warna_buah.get('jeruk')) #dengan method get
 
+<<<<<<< HEAD
 print(user_list[::-2])
+=======
+# print(user_list[0:3:2])
+# reversed_list = new_list[0:8:1] # [start:end:step]
+# print(reversed_list[::-2]) #output 8,6,4,2
+
+#or
+print(new_list[7::-2])
+>>>>>>> 73e80ee25a90861a70965a1bf7dec3675846eff3
