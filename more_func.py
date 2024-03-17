@@ -1,7 +1,7 @@
 #create func
 def print_x_times(parameter = 'loop', loop_amount = 5):
     counter = 0
-    print(global_var)
+    # print(global_var)
     while counter < loop_amount:
         print(counter, parameter)
         counter += 1
